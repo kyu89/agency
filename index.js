@@ -1,26 +1,26 @@
-fetch("/section-html/about.html")
+fetch("section-html/about.html")
     .then(response => response.text())
     .then(data => {
         document.getElementById("about").innerHTML = data;
     });
 
-fetch("/section-html/services.html")
+fetch("section-html/services.html")
     .then(response => response.text())
     .then(data => {
         document.getElementById("services").innerHTML = data;
     });
-fetch("/section-html/testimonials.html")
+fetch("section-html/testimonials.html")
 .then(response => response.text())
 .then(data => {
     document.getElementById("testimonials").innerHTML = data;
     setupTestimonialsCarousel();
 });
-fetch("/section-html/cta.html")
+fetch("section-html/cta.html")
 .then(response => response.text())
 .then(data => {
     document.getElementById("cta").innerHTML = data;
 });
-fetch("/section-html/footer.html")
+fetch("section-html/footer.html")
 .then(response => response.text())
 .then(data => {
     document.getElementById("footer").innerHTML = data;

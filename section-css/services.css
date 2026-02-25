@@ -46,7 +46,7 @@
     right: 0;
     filter: brightness(50%);
     position: absolute;
-    background: url('../assets/servicesBG.jpg') no-repeat center center/cover;
+    background: url('..assets/servicesBG.jpg') no-repeat center center/cover;
     z-index: -1;    
 }
 
