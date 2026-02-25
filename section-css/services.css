@@ -46,7 +46,10 @@
     right: 0;
     filter: brightness(50%);
     position: absolute;
-    background: url('../assets/servicesBG.jpg') no-repeat center center/cover;
+   background-image: url('../assets/servicesBG.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     z-index: -1;    
 }
 
