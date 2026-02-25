@@ -1,0 +1,237 @@
+#testimonials{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-header h2{
+    font-family: "Poppins", sans-serif;
+    font-size:3rem;
+    color: #ff4b2b;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.testimonials-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    padding-top: 30px;
+}
+
+.img-container{
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#chooseus{
+    width: 22rem;
+}
+
+.content1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 40px;
+    gap: 20px;
+}
+
+.choose-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    row-gap: 40px;
+    border-left: 2px dashed #ff4b2b;
+    padding: 0 40px;
+}
+
+.choose-row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    row-gap: 40px;
+
+}
+
+.choose-card{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0px 12px 20px #15141413;
+    padding: 15px;
+}
+
+.choose-card strong{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    color: #ff4b2b;
+}
+
+.choose-card p{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: #383535;
+}
+
+.content2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 20px #c0bebe5c inset,
+                1px 1px 20px #13121216 inset; 
+    background-color: #f6f3f396;
+}
+
+.content2 h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    color: #ff4b2b;
+    padding-bottom: 20px;
+}
+
+.feedback-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 12px;
+
+}
+.carousel-track{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-slide{
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.carousel-slide .profile{
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px #383535;
+}
+.carousel-slide .stars img{
+    width: 2rem;
+    margin: 15px 0px;
+}
+.carousel-slide .feedback p, .feedback strong{
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: #383535;
+    margin: 12px 0;
+}
+.carousel-button.next{
+    position: absolute;
+    right: 12%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff4b2b;
+    border: none;
+    cursor: pointer;
+    font-size: 3rem;
+    background: transparent;
+    padding: 0;
+}
+
+.carousel-button.prev{
+    left: 12%;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #ff4b2b;
+    border: none;
+    cursor: pointer;
+    font-size: 3rem;
+    background: transparent;
+}
+
+.carousel-button:hover{
+    color: #383535;
+}
+.carousel-button:focus{
+    outline: none;
+    color: #383535;
+}
+
+.border-bottom{
+    width: 100%;
+    height: 6rem;
+}
+
+@media (max-width: 575px){
+    .content1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+    #chooseus{
+        display: none;
+    }
+    .choose-row, .choose-row2{
+        width: 100%;
+    }
+    .testimonials-header{
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+    .carousel{
+        width:100%;
+    }
+    .carousel-slide .feedback p{
+        font-size:0.95rem;
+    }
+    .carousel-slide{
+        width: 100%;
+    }
+    .content2 h2{
+        font-size: 2rem;
+    }
+    .carousel-button{
+        display: none;
+    }
+    .feedback-row{
+        width: 90%;
+    }
+    .feedback{
+        width: 100%;
+    }
+    .content2{
+        width: 100%;
+    }
+}
